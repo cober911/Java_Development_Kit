@@ -1,6 +1,7 @@
 package Seminar1;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Swing {
 
@@ -8,9 +9,9 @@ public class Swing {
         JFrame jfrm = new JFrame("Простое приложение Swing"); //Создание контейнера.
         jfrm.setSize(350, 100); //Настройка размеров контейнера.
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Прекращение выполнения программы при её закрытии.
-        jfrm.setLocationRelativeTo(null); //Оасположение окна программы по центру экранна.
+        jfrm.setLocationRelativeTo(null); //Расположение окна программы по центру экранна.
         JLabel jlab = new JLabel("Программирование интерфейса с помощью Swing"); //Добавление метки Swing.
-        jfrm.add(jlab); //Добавление метки на панель содержимого.
+        jfrm.add(jlab, BorderLayout.CENTER); //Добавление метки на панель содержимого, с помощью менеджера компановки по центру.
         jfrm.setVisible(true); //Отобразить фрейм
     }
 
