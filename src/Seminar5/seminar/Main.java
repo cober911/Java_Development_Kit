@@ -1,4 +1,4 @@
-package Homeworks.ls5;
+package Seminar5.seminar;
 
 import java.util.concurrent.CountDownLatch;
 
